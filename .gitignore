@@ -1,10 +1,19 @@
-# dotnet
+# Build
 **/bin
 **/obj
 
-# sass-only
+# Sass-only
 **/*.css
 **/*.css.map
 
-# misc
+# VS Code
+**/.vscode/*
+!**/.vscode/extensions.json
+!**/.vscode/launch.json
+!**/.vscode/project.code-snippets
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+**/.history
+
+# Misc
 **/.DS_Store

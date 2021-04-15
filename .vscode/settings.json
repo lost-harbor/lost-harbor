@@ -7,8 +7,9 @@
   "editor.rulers": [100, 120],
   "editor.occurrencesHighlight": false,
   "editor.detectIndentation": false,
-  "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
   "editor.insertSpaces": true,
   "editor.trimAutoWhitespace": true,
   "files.insertFinalNewline": true,
@@ -17,5 +18,13 @@
   "editor.renderWhitespace": "boundary",
   "omnisharp.enableRoslynAnalyzers": true,
   "omnisharp.enableEditorConfigSupport": true,
-  "razor.devmode": true
+  "razor.devmode": true,
+  "csharp.format.enable": true,
+  "razor.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "omnisharp.useEditorFormattingSettings": true,
+  "omnisharp.organizeImportsOnFormat": true,
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  }
 }
