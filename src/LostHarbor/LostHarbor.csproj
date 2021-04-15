@@ -32,7 +32,7 @@
   </Target>
 
   <Target Name="PreBuild" BeforeTargets="Build">
-    <Exec Command="sass --load-path=../LostHarbor.UX/Styles ../LostHarbor.UX/Styles:wwwroot/css ../LostHarbor.UX/Components:../LostHarbor.UX/Components .:. --style=compressed --update"/>
+    <Exec Command="sass --load-path=../LostHarbor.UX/Styles .:. --style=compressed --update"/>
   </Target>
 
 </Project>

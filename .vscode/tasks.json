@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "prebuild",
+      "label": "compile-sass",
       "command": "sass",
       "type": "process",
       "args": [
@@ -10,7 +10,6 @@
         "src/LostHarbor.UX/Styles:src/LostHarbor.UX/wwwroot/css",
         "src/LostHarbor.UX/Components:src/LostHarbor.UX/Components",
         "src/LostHarbor:src/LostHarbor",
-        "src/LostHarbor.UX/Styles:src/LostHarbor/wwwroot/css",
         "--style=compressed",
         "--update"
       ],
