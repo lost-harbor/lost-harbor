@@ -1,6 +1,6 @@
 # MIT License
 
-**Copyright © 2020 Marc King**
+**Copyright © 2021 Marc King**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the _"Software"_), to deal
