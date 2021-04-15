@@ -2,6 +2,21 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "prebuild",
+      "command": "sass",
+      "type": "process",
+      "args": [
+        "--load-path=src/LostHarbor.UX/Styles",
+        "src/LostHarbor.UX/Styles:src/LostHarbor.UX/wwwroot/css",
+        "src/LostHarbor.UX/Components:src/LostHarbor.UX/Components",
+        "src/LostHarbor:src/LostHarbor",
+        "src/LostHarbor.UX/Styles:src/LostHarbor/wwwroot/css",
+        "--style=compressed",
+        "--update"
+      ],
+      "problemMatcher": []
+    },
+    {
       "label": "build",
       "command": "dotnet",
       "type": "process",

@@ -20,4 +20,15 @@
     <ProjectReference Include="..\LostHarbor.Core\LostHarbor.Core.csproj" />
   </ItemGroup>
 
+  <Target Name="SassCheck" BeforeTargets="PreBuild">
+    <Exec Command="sass --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCodeSass" />
+    </Exec>
+    <Error Condition="'$(ErrorCodeSass)' != '0'" Text="Dart-sass is required for this project. Install globally with 'npm i -g sass' " />
+  </Target>
+
+  <Target Name="PreBuild" BeforeTargets="Build">
+    <Exec Command="sass --load-path=Styles Styles:wwwroot/css Components:Components --style=compressed --update"/>
+  </Target>
+
 </Project>
