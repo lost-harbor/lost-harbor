@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-dotnettools.blazorwasm-companion",
+    "bierner.markdown-mermaid",
+    "ms-dotnettools.csharp",
+    "editorconfig.editorconfig",
+    "adrianwilczynski.blazor-snippet-pack"
+  ]
+}

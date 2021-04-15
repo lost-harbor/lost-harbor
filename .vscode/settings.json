@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/bin": true,
+    "**/obj": true
+  },
+  "editor.rulers": [100, 120],
+  "editor.occurrencesHighlight": false,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.insertSpaces": true,
+  "editor.trimAutoWhitespace": true,
+  "files.insertFinalNewline": true,
+  "html.format.endWithNewline": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "boundary",
+  "omnisharp.enableRoslynAnalyzers": true,
+  "omnisharp.enableEditorConfigSupport": true,
+  "razor.devmode": true
+}

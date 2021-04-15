@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <RazorLangVersion>5.0</RazorLangVersion>
+    <RootNamespace>LogicSeed.LostHarbor.UX</RootNamespace>
+    <AssemblyName>LogicSeed.LostHarbor.UX</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LostHarbor.Core\LostHarbor.Core.csproj" />
+  </ItemGroup>
+
+</Project>
