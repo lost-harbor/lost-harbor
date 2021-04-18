@@ -1,0 +1,16 @@
+// SPDX-License-Identifier: MIT
+// Copyright ©2021 Marc King
+
+html {
+  font-family: $font-sans;
+  line-height: $html-line-height;
+  -webkit-text-size-adjust: $webkit-text-size-adjust;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}

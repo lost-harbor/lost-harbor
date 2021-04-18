@@ -1,4 +1,9 @@
-﻿<Router AppAssembly="@typeof(Program).Assembly" PreferExactMatches="@true">
+﻿@*
+SPDX-License-Identifier: MIT
+Copyright ©2021 Marc King
+*@
+
+<Router AppAssembly="@typeof(Program).Assembly" PreferExactMatches="@true">
   <Found Context="routeData">
     <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
   </Found>

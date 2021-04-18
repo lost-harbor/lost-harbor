@@ -1,0 +1,13 @@
+svg.logo {
+  & > path.text {
+    fill: #ffffff !important;
+  }
+
+  & > path.accent {
+    fill: $color-orange-700 !important;
+  }
+
+  & > path.dyson {
+    fill: #666666 !important;
+  }
+}

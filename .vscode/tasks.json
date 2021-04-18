@@ -13,7 +13,22 @@
         "--style=compressed",
         "--update"
       ],
-      "problemMatcher": []
+      "group": "build"
+    },
+    {
+      "label": "watch-sass",
+      "command": "sass",
+      "type": "process",
+      "args": [
+        "--load-path=src/LostHarbor.UX/Styles",
+        "src/LostHarbor.UX/Styles:src/LostHarbor.UX/wwwroot/css",
+        "src/LostHarbor.UX/Components:src/LostHarbor.UX/Components",
+        "src/LostHarbor:src/LostHarbor",
+        "--style=compressed",
+        "--update",
+        "--watch"
+      ],
+      "group": "build"
     },
     {
       "label": "build",
@@ -41,16 +56,26 @@
     },
     {
       "label": "watch",
+      "dependsOn": ["watch-sass", "watch-dotnet"],
+      "dependsOrder": "parallel",
+      "group": "build",
+      "problemMatcher": ["$msCompile"],
+      "isBackground": true
+    },
+    {
+      "label": "watch-dotnet",
       "command": "dotnet",
       "type": "process",
       "args": [
         "watch",
         "run",
+        "--project",
         "${workspaceFolder}/src/LostHarbor/LostHarbor.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
-      "problemMatcher": "$msCompile"
+      "problemMatcher": "$msCompile",
+      "group": "build"
     }
   ]
 }

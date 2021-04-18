@@ -15,4 +15,35 @@
   //   ],
   //   "description": "Log output to console"
   // }
+  "Slash Copyright": {
+    "scope": "csharp,javascript,scss",
+    "prefix": "copyright-slash",
+    "body": [
+      "// SPDX-License-Identifier: MIT",
+      "// Copyright ©2021 Marc King",
+      "$0"
+    ]
+  },
+  "Razor Copyright": {
+    "scope": "aspnetcorerazor",
+    "prefix": "copyright-razor",
+    "body": [
+      "@*",
+      "SPDX-License-Identifier: MIT",
+      "Copyright ©2021 Marc King",
+      "*@",
+      "$0"
+    ]
+  },
+  "XML Copyright": {
+    "scope": "html,xml",
+    "prefix": "copyright-xml",
+    "body": [
+      "<!--",
+      "SPDX-License-Identifier: MIT",
+      "Copyright ©2021 Marc King",
+      "-->",
+      "$0"
+    ]
+  }
 }

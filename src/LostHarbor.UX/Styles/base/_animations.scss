@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: MIT
+// Copyright ©2021 Marc King
+
+@include keyframes(spin-cw-x2) {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+}
+
+@include keyframes(spin-ccw-x2) {
+  0% {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,43 @@
+div.header {
+  display: grid;
+  grid-template-columns: max-content auto;
+  background-color: #131313;
+  height: 48px;
+  padding: 8px 16px;
+
+  align-items: center;
+
+  & svg {
+    justify-self: start;
+  }
+
+  & div.menu {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 16px;
+  }
+}
+
+.menu ::deep a {
+  color: #d7d7d7;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  & span {
+    margin-right: 8px;
+    color: #666666;
+  }
+}
+
+.menu ::deep a.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.menu ::deep a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}

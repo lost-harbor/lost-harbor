@@ -1,0 +1,90 @@
+// SPDX-License-Identifier: MIT
+// Copyright ©2021 Marc King
+
+@use "sass:color";
+
+// Base Colors
+$color-red: #fc618d;
+$color-orange: #fd9353;
+$color-yellow: #fce566;
+$color-green: #7bd88f;
+$color-blue: #5ad4e6;
+$color-purple: #948ae3;
+
+// Red
+$color-red-100: color.adjust($color-red, $lightness: 20%);
+$color-red-200: color.adjust($color-red, $lightness: 15%);
+$color-red-300: color.adjust($color-red, $lightness: 10%);
+$color-red-400: color.adjust($color-red, $lightness: 5%);
+$color-red-500: $color-red;
+$color-red-600: color.adjust($color-red, $lightness: -5%);
+$color-red-700: color.adjust($color-red, $lightness: -10%);
+$color-red-800: color.adjust($color-red, $lightness: -15%);
+$color-red-900: color.adjust($color-red, $lightness: -20%);
+
+// Orange
+$color-orange-100: color.adjust($color-orange, $lightness: 20%);
+$color-orange-200: color.adjust($color-orange, $lightness: 15%);
+$color-orange-300: color.adjust($color-orange, $lightness: 10%);
+$color-orange-400: color.adjust($color-orange, $lightness: 5%);
+$color-orange-500: $color-orange;
+$color-orange-600: color.adjust($color-orange, $lightness: -5%);
+$color-orange-700: color.adjust($color-orange, $lightness: -10%);
+$color-orange-800: color.adjust($color-orange, $lightness: -15%);
+$color-orange-900: color.adjust($color-orange, $lightness: -20%);
+
+// Yellow
+$color-yellow-100: color.adjust($color-yellow, $lightness: 20%);
+$color-yellow-200: color.adjust($color-yellow, $lightness: 15%);
+$color-yellow-300: color.adjust($color-yellow, $lightness: 10%);
+$color-yellow-400: color.adjust($color-yellow, $lightness: 5%);
+$color-yellow-500: $color-yellow;
+$color-yellow-600: color.adjust($color-yellow, $lightness: -5%);
+$color-yellow-700: color.adjust($color-yellow, $lightness: -10%);
+$color-yellow-800: color.adjust($color-yellow, $lightness: -15%);
+$color-yellow-900: color.adjust($color-yellow, $lightness: -20%);
+
+// Green
+$color-green-100: color.adjust($color-green, $lightness: 20%);
+$color-green-200: color.adjust($color-green, $lightness: 15%);
+$color-green-300: color.adjust($color-green, $lightness: 10%);
+$color-green-400: color.adjust($color-green, $lightness: 5%);
+$color-green-500: $color-green;
+$color-green-600: color.adjust($color-green, $lightness: -5%);
+$color-green-700: color.adjust($color-green, $lightness: -10%);
+$color-green-800: color.adjust($color-green, $lightness: -15%);
+$color-green-900: color.adjust($color-green, $lightness: -20%);
+
+// Blue
+$color-blue-100: color.adjust($color-blue, $lightness: 20%);
+$color-blue-200: color.adjust($color-blue, $lightness: 15%);
+$color-blue-300: color.adjust($color-blue, $lightness: 10%);
+$color-blue-400: color.adjust($color-blue, $lightness: 5%);
+$color-blue-500: $color-blue;
+$color-blue-600: color.adjust($color-blue, $lightness: -5%);
+$color-blue-700: color.adjust($color-blue, $lightness: -10%);
+$color-blue-800: color.adjust($color-blue, $lightness: -15%);
+$color-blue-900: color.adjust($color-blue, $lightness: -20%);
+
+// Purple
+$color-purple-100: color.adjust($color-purple, $lightness: 20%);
+$color-purple-200: color.adjust($color-purple, $lightness: 15%);
+$color-purple-300: color.adjust($color-purple, $lightness: 10%);
+$color-purple-400: color.adjust($color-purple, $lightness: 5%);
+$color-purple-500: $color-purple;
+$color-purple-600: color.adjust($color-purple, $lightness: -5%);
+$color-purple-700: color.adjust($color-purple, $lightness: -10%);
+$color-purple-800: color.adjust($color-purple, $lightness: -15%);
+$color-purple-900: color.adjust($color-purple, $lightness: -20%);
+
+$header: #131313;
+$body-color: #c2c2c2;
+$body-background-color: #000000;
+$navbar-background-color: #000000;
+
+$color-red: #fc618d;
+$color-orange: #fd9353;
+$color-yellow: #fce566;
+$color-green: #7bd88f;
+$color-blue: #5ad4e6;
+$color-purple: #948ae3;

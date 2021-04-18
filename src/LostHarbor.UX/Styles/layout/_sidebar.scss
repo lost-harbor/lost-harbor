@@ -1,0 +1,44 @@
+// SPDX-License-Identifier: MIT
+// Copyright ©2021 Marc King
+
+.sidebar {
+  background: #191c20;
+  font-family: sans-serif;
+  min-height: 100%;
+  padding: 0;
+  width: 247px;
+  z-index: z("sidebar");
+
+  @include transition(width 0.25s ease, background 0.25s ease);
+
+  display: block;
+
+  .nav-header,
+  .nav-item {
+    @include flex-align(center);
+    @include display-flexbox;
+    @include unselectable;
+    padding: 0.8rem 1.188rem;
+    white-space: nowrap;
+    height: 46px;
+  }
+
+  .nav-header {
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .sidebar .nav-item {
+    color: #a3a3a3;
+  }
+
+  .nav-item:hover {
+    background: #121417;
+    color: #ffffff;
+  }
+
+  .nav-item.active {
+    background: #0b0c0e;
+    color: #ffffff;
+  }
+}

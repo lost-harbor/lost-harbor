@@ -3,7 +3,7 @@
     "**/.git": true,
     "**/bin": true,
     "**/obj": true,
-    "**/*.css": true,
+    //"**/*.css": true,
     "**/*.css.map": true
   },
   "editor.rulers": [100, 120],
@@ -28,5 +28,8 @@
   "omnisharp.organizeImportsOnFormat": true,
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
   }
 }
