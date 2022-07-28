@@ -1,0 +1,26 @@
+*                 text=auto
+
+*.cs              text diff=csharp
+*.razor           text diff=html
+*.csproj          text eol=crlf
+
+*.scss            text diff=css
+*.html            text diff=html
+*.md              text diff=markdown
+*.json            text
+
+*.png             binary
+*.svg             text
+*.eot             binary
+*.otf             binary
+*.ttf             binary
+*.woff            binary
+*.db              binary
+
+*.sh              text eol=lf
+*.cmd             text eol=crlf
+
+.editorconfig     text export-ignore
+.gitattributes    text export-ignore
+.gitignore        text export-ignore
+.gitkeep          text export-ignore
