@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Game",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/src/LostHarbor/LostHarbor.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Watch Game",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "--project",
+        "${workspaceFolder}/src/LostHarbor/LostHarbor.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Build Sass",
+      "command": "sass",
+      "type": "shell",
+      "args": [
+        "--load-path=src/LostHarbor/Styles",
+        "src/LostHarbor/Styles:src/LostHarbor/wwwroot/css",
+        "--style=compressed",
+        "--update"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Watch Sass",
+      "command": "sass",
+      "type": "shell",
+      "args": [
+        "--load-path=src/LostHarbor/Styles",
+        "src/LostHarbor/Styles:src/LostHarbor/wwwroot/css",
+        "--style=compressed",
+        "--update",
+        "--watch"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}
