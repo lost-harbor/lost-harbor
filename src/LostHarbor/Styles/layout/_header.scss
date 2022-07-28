@@ -1,0 +1,67 @@
+header.site-header {
+  display: grid;
+  grid-template-columns: min-content auto;
+  background-color: #131313;
+  height: 4.8rem;
+  padding: 0.8rem 1.6rem;
+  gap: 3.2rem;
+
+  align-items: center;
+
+  & a.site-logo {
+    height: 60%;
+    justify-self: start;
+
+    & img {
+      height: 100%;
+    }
+  }
+
+  & nav.site-menu {
+    justify-self: end;
+    gap: 0.8rem;
+    display: flex;
+
+    & a {
+      color: #d7d7d7;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 1.4rem;
+      font-family: $font-family-display;
+      font-weight: $font-weight-bold;
+      line-height: 1.4rem;
+      padding: 0.6rem 1rem 0.2rem 1rem;
+      -webkit-user-select: none;
+      user-select: none;
+      border-radius: 0.4rem;
+      background-color: #1a1a1a;
+
+      & .icon {
+        margin-top: 0.2rem;
+        color: #666666;
+      }
+
+      &.active,
+      &:active {
+        background-color: #333333;
+        color: white;
+
+        & .icon {
+          color: #999999;
+        }
+      }
+
+      &:hover {
+        background-color: #4d4d4d;
+        color: white;
+
+        & .icon {
+          color: #999999;
+        }
+      }
+    }
+  }
+}

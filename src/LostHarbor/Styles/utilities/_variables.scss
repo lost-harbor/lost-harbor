@@ -1,0 +1,57 @@
+// General variables
+
+// z-indexes in order of highest to lowest
+$z-indexes: ("error", "modal", "header", "sidebar", "content");
+
+$border-radius-small: 0.2rem;
+$border-radius-normal: 0.4rem;
+$border-radius-large: 0.8rem;
+
+// Element or component specific variables
+
+// Body
+$font-size-body: 1.6rem;
+$line-height-body: 1.25;
+
+// Blazor Error UI
+$padding-blazor-error-ui: 1rem 1.25rem;
+$font-size-blazor-error-ui-dismiss: 1.8rem;
+$line-height-blazor-error-ui-dismiss: 1.8rem;
+
+// Icons
+// Inline text
+$font-size-icon-inline-text-game: 1.375em;
+$font-size-icon-inline-text-material: 1.5em;
+$height-icon-inline-text: 1em;
+$margin-bottom-icon-inline-text: 0.15em;
+$margin-left-icon-inline-text: -0.15em;
+$width-icon-inline-text: 1.25em;
+// Inline block
+$font-size-icon-inline-block-game: 1em;
+$font-size-icon-inline-block-material: 1.125em;
+$height-icon-inline-block: 1em;
+$margin-left-icon-inline-block-material: -0.05em;
+$width-icon-inline-block: 1em;
+
+// Button
+$border-width-button: 0.1rem;
+$font-size-button: 1.2rem;
+$height-button: 3rem;
+$letter-spacing-button: 0.1rem;
+$line-height-button: 1.2rem;
+$margin-right-button-icon: 0.75em;
+$margin-top-button-icon: 0.2em;
+$outline-focus-button: 0;
+$padding-bottom-button: 0;
+$padding-left-button: 1.5rem;
+$padding-right-button: 1.5rem;
+$padding-top-button: 0.2rem;
+$text-transform-button: uppercase;
+
+// Checkbox
+$height-checkbox: 1.6rem;
+$margin-left-checkbox-label: 0.5rem;
+$vertical-align-checkbox-label: -0.1rem;
+$width-checkbox: 1.6rem;
+
+// Input

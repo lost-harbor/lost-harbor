@@ -1,0 +1,31 @@
+input[type="radio"] {
+  display: inline;
+}
+
+input[type="radio"]:before {
+  content: "";
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: black;
+  user-select: none;
+}
+input[type="radio"]:checked:before {
+  background: black;
+}
+
+input[type="radio"]:before {
+  background-image: url("../assets/radio.svg");
+}
+input[type="radio"]:checked:before {
+  background-image: url("../assets/radio-checked.svg");
+}
+input[type="radio"]:indeterminate:before {
+  background-image: url("../assets/radio-indeterminate.svg");
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  vertical-align: -0.1rem;
+}

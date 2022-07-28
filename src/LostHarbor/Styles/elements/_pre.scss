@@ -1,0 +1,27 @@
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-family-monospace;
+}
+
+code,
+kbd,
+samp {
+  background-color: #232323;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 0.9em;
+  font-weight: $font-weight-semi-bold;
+  line-height: 1;
+}
+
+pre {
+  background-color: #131313;
+  border: 1px solid #232323;
+  border-radius: 4px;
+  display: block;
+  padding: 12px 16px;
+}

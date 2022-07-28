@@ -1,0 +1,67 @@
+$loading-help-list: "Generating random garbage...", "Filling holes with dirt...",
+  "Hiding the bodies...", "Doing more stuff...", "This shouldn't be taking this long...",
+  "Do you think it's broken?", " ", " ";
+
+@include text-change-animation(text-change-loading-help, $loading-help-list);
+
+div#app > div.loader {
+  align-items: center;
+  background-color: $background-color-body;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 1.6rem;
+  width: 100vw;
+
+  & > div.container {
+    max-width: 100%;
+    min-width: 15rem;
+    width: 40rem;
+
+    & > div.card {
+      background-color: $background-color-loader-card;
+      border: 0.1rem solid hsl(0, 0%, 20%);
+      border-radius: 0.4rem;
+      padding: 20px 24px;
+
+      & > div.messages {
+        color: #666666;
+        font-size: 14px;
+        line-height: 14px;
+        height: 14px;
+        margin: 24px 0;
+
+        &:after {
+          content: "";
+          @include animation(text-change-loading-help 10s linear infinite);
+        }
+      }
+
+      & div.indeterminate-progress-line,
+      div.indeterminate-progress-line-value {
+        border-radius: 0.2rem;
+        height: 0.8rem;
+        width: 100%;
+      }
+
+      & > div.indeterminate-progress-line {
+        background-color: #333333;
+        overflow: hidden;
+
+        & > div.indeterminate-progress-line-value {
+          @include animation(indeterminate-progress 1s linear infinite);
+          background-color: #282828;
+          transform-origin: 0% 50%;
+        }
+      }
+    }
+
+    & > div.copyright {
+      color: #4d4d4d;
+      font-family: $font-family-monospace;
+      font-size: 1rem;
+      margin-top: 0.4rem;
+      text-align: right;
+    }
+  }
+}

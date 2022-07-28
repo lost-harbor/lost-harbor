@@ -1,0 +1,60 @@
+input:not([type="checkbox"], [type="radio"], [type="submit"], [type="button"], [type="reset"], [type="file"]),
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+input:not([type="checkbox"], [type="radio"], [type="submit"], [type="button"], [type="reset"], [type="file"]),
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+  @include box-shadow(none);
+  @include box-sizing(border-box);
+  background-color: $color-input-background;
+  border: 0.1rem solid $color-input-border;
+  border-radius: $border-radius-normal;
+  color: $color-input-foreground;
+  min-height: 3rem;
+  min-width: 30rem;
+  padding: 0 1rem;
+  vertical-align: middle;
+
+  &::placeholder {
+    color: $color-input-foreground-placeholder;
+  }
+
+  &:focus {
+    border-color: $color-input-border-focus;
+    outline: 0;
+  }
+}
+
+select[multiple],
+textarea {
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+
+  &::-webkit-scrollbar-track {
+    border-bottom-right-radius: $border-radius-normal;
+    border-top-right-radius: $border-radius-normal;
+  }
+}
+
+textarea {
+  min-height: 6.5rem;
+  resize: none;
+}

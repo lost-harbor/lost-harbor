@@ -1,0 +1,35 @@
+#blazor-error-ui {
+  background: $background-color-blazor-error-ui;
+  bottom: 0;
+  color: $color-blazor-error-ui;
+  display: none; // Updated by error logic
+  font-family: $font-family-monospace;
+  font-weight: $font-weight-semi-bold;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: z-index("error");
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-blazor-error-ui;
+
+    & a {
+      color: $color-blazor-error-ui-link;
+      text-decoration: none;
+    }
+
+    & > .message {
+      align-self: center;
+    }
+
+    & > .dismiss {
+      align-self: center;
+      cursor: pointer;
+      font-family: $font-family-display;
+      font-size: $font-size-blazor-error-ui-dismiss;
+      line-height: $line-height-blazor-error-ui-dismiss;
+    }
+  }
+}

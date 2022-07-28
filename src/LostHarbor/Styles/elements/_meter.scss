@@ -1,0 +1,23 @@
+meter {
+  background: $color-meter-container-background;
+  display: block;
+  margin-bottom: 1em;
+  width: 100%;
+
+  &::-webkit-meter-bar {
+    background: $color-meter-bar-background;
+    border-color: $color-meter-bar-border;
+  }
+
+  &::-webkit-meter-optimum-value {
+    background: $color-meter-normal-background;
+  }
+
+  &::-webkit-meter-suboptimum-value {
+    background: $color-meter-warning-background;
+  }
+
+  &::-webkit-meter-even-less-good-value {
+    background: $color-meter-danger-background;
+  }
+}

@@ -1,0 +1,69 @@
+@mixin box-sizing($property...) {
+  -webkit-box-sizing: $property;
+  box-sizing: $property;
+}
+
+@mixin box-shadow($property...) {
+  -webkit-box-shadow: $property;
+  box-shadow: $property;
+}
+
+@mixin transition($property...) {
+  transition: $property;
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+}
+
+@mixin flex-align($property...) {
+  -webkit-box-align: $property;
+  -ms-flex-align: $property;
+  align-items: $property;
+}
+
+@mixin flex-wrap($property...) {
+  -ms-flex-wrap: $property;
+  flex-wrap: $property;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($property...) {
+  -webkit-animation: #{$property};
+  -moz-animation: #{$property};
+  -ms-animation: #{$property};
+  -o-animation: #{$property};
+  animation: #{$property};
+}
+
+@mixin unselectable {
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@mixin display-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

@@ -1,0 +1,15 @@
+label,
+legend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+legend {
+  color: hsl(0, 0%, 60%);
+}
+
+fieldset {
+  padding: 1rem;
+  border: 0.1rem solid hsl(0, 0%, 10%);
+}

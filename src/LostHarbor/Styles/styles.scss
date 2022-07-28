@@ -1,0 +1,43 @@
+// Utilities
+// These do not generate CSS directly and are safe to import
+// Import order dependent
+@import "utilities/typography";
+@import "utilities/colors";
+@import "utilities/variables";
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/placeholders";
+
+// Base
+// Import order dependent
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+@import "base/animations";
+@import "base/helpers";
+
+// Layout
+@import "layout/columns";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/navigation";
+@import "layout/main-panel";
+@import "layout/auth-page";
+
+// Elements
+@import "elements/buttons";
+@import "elements/inputs";
+@import "elements/pre";
+@import "elements/scrollbars";
+@import "elements/checkbox";
+@import "elements/radio";
+@import "elements/label";
+@import "elements/meter";
+
+// Components
+@import "components/blazor-error-ui";
+@import "components/icons";
+@import "components/loaders";
+@import "components/logo";
+@import "components/dev-sign";

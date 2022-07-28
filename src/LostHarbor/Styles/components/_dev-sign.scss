@@ -1,0 +1,65 @@
+div.dev-sign,
+div.dev-loader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+div.dev-sign {
+  animation: fadeIn 5s, devLower 2s;
+
+  & > img {
+    animation: devFlicker 1s 2s 2;
+  }
+  & > span {
+    color: hsl(35, 100%, 41%);
+  }
+}
+
+@keyframes devLower {
+  0% {
+    padding-bottom: 100px;
+  }
+  100% {
+    padding-bottom: 0;
+  }
+}
+
+div.dev-loader {
+  color: hsl(0, 0%, 30%);
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+@keyframes devFlicker {
+  0% {
+    opacity: 0.1;
+  }
+  5% {
+    opacity: 0.1;
+  }
+  7% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.4;
+  }
+  88% {
+    opacity: 1;
+  }
+}

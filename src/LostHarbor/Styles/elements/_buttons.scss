@@ -1,0 +1,80 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  @include box-sizing(border-box);
+  @include unselectable;
+  align-content: center;
+  align-items: center;
+  background-color: $color-button-normal-background;
+  border: $border-width-button solid $color-button-normal-border;
+  border-radius: $border-radius-normal;
+  color: $color-button-normal-foreground;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: $font-size-button;
+  font-weight: $font-weight-medium;
+  height: $height-button;
+  letter-spacing: $letter-spacing-button;
+  line-height: $line-height-button;
+  padding: $padding-top-button $padding-right-button $padding-bottom-button $padding-left-button;
+  text-decoration: none;
+  text-transform: $text-transform-button;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    background-color: $color-button-normal-background-hover;
+    border-color: $color-button-normal-border-hover;
+    color: $color-button-normal-foreground-hover;
+    outline: $outline-focus-button;
+  }
+
+  &:active {
+    background-color: $color-button-normal-background-active;
+    border-color: $color-button-normal-border-active;
+    color: $color-button-normal-foreground-active;
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: $color-button-normal-background-disabled;
+    border-color: $color-button-normal-border-disabled;
+    color: $color-button-normal-foreground-disabled;
+    cursor: not-allowed;
+  }
+
+  &.primary {
+    background-color: $color-button-primary-background;
+    border-color: $color-button-primary-border;
+    color: $color-button-primary-foreground;
+
+    &:hover,
+    &:focus {
+      background-color: $color-button-primary-background-hover;
+      border-color: $color-button-primary-border-hover;
+      color: $color-button-primary-foreground-hover;
+      outline: $outline-focus-button;
+    }
+
+    &:active {
+      background-color: $color-button-primary-background-active;
+      border-color: $color-button-primary-border-active;
+      color: $color-button-primary-foreground-active;
+    }
+
+    &:disabled,
+    &.disabled {
+      background-color: $color-button-primary-background-disabled;
+      border-color: $color-button-primary-border-disabled;
+      color: $color-button-primary-foreground-disabled;
+    }
+  }
+
+  & .icon {
+    margin-right: $margin-right-button-icon;
+    margin-top: $margin-top-button-icon;
+  }
+}

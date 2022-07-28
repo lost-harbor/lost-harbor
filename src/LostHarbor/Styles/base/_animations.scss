@@ -1,0 +1,45 @@
+@use "sass:math";
+
+@include keyframes(indeterminate-progress) {
+  0% {
+    transform: translateX(0) scaleX(0);
+  }
+  40% {
+    transform: translateX(0) scaleX(0.4);
+  }
+  100% {
+    transform: translateX(100%) scaleX(0.5);
+  }
+}
+
+@include keyframes(fadeIn) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(fadeOut) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@mixin text-change-animation($animation-name, $text-list) {
+  @include keyframes($animation-name) {
+    $length: length($text-list) - 1;
+
+    @each $text in $text-list {
+      $percent: math.div(index($text-list, $text) - 1, $length) * 100%;
+
+      #{$percent} {
+        content: $text;
+      }
+    }
+  }
+}

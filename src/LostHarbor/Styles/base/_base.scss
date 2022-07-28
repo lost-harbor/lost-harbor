@@ -1,0 +1,46 @@
+// Custom resets
+
+*,
+*::before,
+*::after {
+  @include box-sizing(border-box);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1;
+}
+
+// Base styles
+
+html {
+  font-size: 62.5%; // Makes 1rem = 10px at normal scale
+}
+
+body {
+  background-color: $background-color-body;
+  color: $color-body;
+  font-family: $font-family-normal;
+  font-size: $font-size-body;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-body;
+  text-align: left;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:visited {
+    color: $color-link-visited;
+  }
+}

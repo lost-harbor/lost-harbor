@@ -1,0 +1,9 @@
+// z-indexes are added/removed in the _variables.scss/$z-indexes variable.
+@function z-index($name) {
+  @if index($z-indexes, $name) {
+    @return ((length($z-indexes) - index($z-indexes, $name))+1);
+  } @else {
+    @warn 'Used non-existent z-index "#{$name}"; create a new one or choose one of: #{$z-indexes}';
+    @return null;
+  }
+}

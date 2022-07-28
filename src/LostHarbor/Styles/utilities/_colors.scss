@@ -1,0 +1,151 @@
+@use "sass:color";
+
+// Base Colors
+$color-red: #fc618d;
+$color-orange: #fd9353;
+$color-yellow: #fce566;
+$color-green: #7bd88f;
+$color-blue: #5ad4e6;
+$color-purple: #948ae3;
+
+// Red
+$color-red-100: color.adjust($color-red, $lightness: 20%);
+$color-red-200: color.adjust($color-red, $lightness: 15%);
+$color-red-300: color.adjust($color-red, $lightness: 10%);
+$color-red-400: color.adjust($color-red, $lightness: 5%);
+$color-red-500: $color-red;
+$color-red-600: color.adjust($color-red, $lightness: -5%);
+$color-red-700: color.adjust($color-red, $lightness: -10%);
+$color-red-800: color.adjust($color-red, $lightness: -15%);
+$color-red-900: color.adjust($color-red, $lightness: -20%);
+
+// Orange
+$color-orange-100: color.adjust($color-orange, $lightness: 20%);
+$color-orange-200: color.adjust($color-orange, $lightness: 15%);
+$color-orange-300: color.adjust($color-orange, $lightness: 10%);
+$color-orange-400: color.adjust($color-orange, $lightness: 5%);
+$color-orange-500: $color-orange;
+$color-orange-600: color.adjust($color-orange, $lightness: -5%);
+$color-orange-700: color.adjust($color-orange, $lightness: -10%);
+$color-orange-800: color.adjust($color-orange, $lightness: -15%);
+$color-orange-900: color.adjust($color-orange, $lightness: -20%);
+
+// Yellow
+$color-yellow-100: color.adjust($color-yellow, $lightness: 20%);
+$color-yellow-200: color.adjust($color-yellow, $lightness: 15%);
+$color-yellow-300: color.adjust($color-yellow, $lightness: 10%);
+$color-yellow-400: color.adjust($color-yellow, $lightness: 5%);
+$color-yellow-500: $color-yellow;
+$color-yellow-600: color.adjust($color-yellow, $lightness: -5%);
+$color-yellow-700: color.adjust($color-yellow, $lightness: -10%);
+$color-yellow-800: color.adjust($color-yellow, $lightness: -15%);
+$color-yellow-900: color.adjust($color-yellow, $lightness: -20%);
+
+// Green
+$color-green-100: color.adjust($color-green, $lightness: 20%);
+$color-green-200: color.adjust($color-green, $lightness: 15%);
+$color-green-300: color.adjust($color-green, $lightness: 10%);
+$color-green-400: color.adjust($color-green, $lightness: 5%);
+$color-green-500: $color-green;
+$color-green-600: color.adjust($color-green, $lightness: -5%);
+$color-green-700: color.adjust($color-green, $lightness: -10%);
+$color-green-800: color.adjust($color-green, $lightness: -15%);
+$color-green-900: color.adjust($color-green, $lightness: -20%);
+
+// Blue
+$color-blue-100: color.adjust($color-blue, $lightness: 20%);
+$color-blue-200: color.adjust($color-blue, $lightness: 15%);
+$color-blue-300: color.adjust($color-blue, $lightness: 10%);
+$color-blue-400: color.adjust($color-blue, $lightness: 5%);
+$color-blue-500: $color-blue;
+$color-blue-600: color.adjust($color-blue, $lightness: -5%);
+$color-blue-700: color.adjust($color-blue, $lightness: -10%);
+$color-blue-800: color.adjust($color-blue, $lightness: -15%);
+$color-blue-900: color.adjust($color-blue, $lightness: -20%);
+
+// Purple
+$color-purple-100: color.adjust($color-purple, $lightness: 20%);
+$color-purple-200: color.adjust($color-purple, $lightness: 15%);
+$color-purple-300: color.adjust($color-purple, $lightness: 10%);
+$color-purple-400: color.adjust($color-purple, $lightness: 5%);
+$color-purple-500: $color-purple;
+$color-purple-600: color.adjust($color-purple, $lightness: -5%);
+$color-purple-700: color.adjust($color-purple, $lightness: -10%);
+$color-purple-800: color.adjust($color-purple, $lightness: -15%);
+$color-purple-900: color.adjust($color-purple, $lightness: -20%);
+
+// $header: #131313;
+// $body-color: #c2c2c2;
+// $body-background-color: #000000;
+// $navbar-background-color: #000000;
+
+$color-red: #fc618d;
+$color-orange: #fd9353;
+$color-yellow: #fce566;
+$color-green: #7bd88f;
+$color-blue: #5ad4e6;
+$color-purple: #948ae3;
+
+///////////////////////////////////////////////////////////
+
+$background-color-body: hsl(0, 0%, 0%);
+$color-body: hsl(0, 0%, 95%);
+
+$color-link: hsl(209, 100%, 50%);
+$color-link-hover: hsl(209, 100%, 60%);
+$color-link-visited: hsl(209, 100%, 60%);
+
+$background-color-loader-card: hsl(0, 0%, 10%);
+
+$background-color-blazor-error-ui: rgb(180, 42, 0);
+$color-blazor-error-ui: rgb(226, 226, 226);
+$color-blazor-error-ui-link: hsl(0, 0%, 100%);
+
+$background-color-checkbox-container: hsl(0, 0%, 0%);
+
+/// rename the following to follow standard naming
+
+$color-header-background: hsl(0, 0%, 10%);
+
+$color-input-background: hsl(0, 0%, 10%);
+$color-input-foreground: hsl(0, 0%, 90%);
+$color-input-foreground-placeholder: hsl(0, 0%, 40%);
+$color-input-border: hsl(0, 0%, 30%);
+$color-input-border-focus: hsl(0, 0%, 40%);
+
+$color-scrollbar-track: hsl(0, 0%, 5%);
+$color-scrollbar-thumb: hsl(0, 0%, 15%);
+$color-scrollbar-thumb-hover: hsl(0, 0%, 25%);
+
+$color-button-normal-background: hsl(0, 0%, 20%);
+$color-button-normal-foreground: hsl(0, 0%, 80%);
+$color-button-normal-border: hsl(0, 0%, 20%);
+$color-button-normal-background-hover: hsl(0, 0%, 30%);
+$color-button-normal-foreground-hover: hsl(0, 0%, 90%);
+$color-button-normal-border-hover: hsl(0, 0%, 30%);
+$color-button-normal-background-active: hsl(0, 0%, 10%);
+$color-button-normal-foreground-active: hsl(0, 0%, 70%);
+$color-button-normal-border-active: hsl(0, 0%, 10%);
+$color-button-normal-background-disabled: hsl(0, 0%, 10%);
+$color-button-normal-foreground-disabled: hsl(0, 0%, 60%);
+$color-button-normal-border-disabled: hsl(0, 0%, 10%);
+
+$color-button-primary-background: hsl(209, 100%, 50%);
+$color-button-primary-foreground: hsl(209, 100%, 80%);
+$color-button-primary-border: hsl(209, 100%, 50%);
+$color-button-primary-background-hover: hsl(209, 100%, 60%);
+$color-button-primary-foreground-hover: hsl(209, 100%, 90%);
+$color-button-primary-border-hover: hsl(209, 100%, 60%);
+$color-button-primary-background-active: hsl(209, 100%, 40%);
+$color-button-primary-foreground-active: hsl(209, 100%, 70%);
+$color-button-primary-border-active: hsl(209, 100%, 40%);
+$color-button-primary-background-disabled: hsl(209, 100%, 40%);
+$color-button-primary-foreground-disabled: hsl(209, 100%, 60%);
+$color-button-primary-border-disabled: hsl(209, 100%, 40%);
+
+$color-meter-container-background: hsl(0, 0%, 0%);
+$color-meter-bar-background: hsl(0, 0%, 15%);
+$color-meter-bar-border: hsl(0, 0%, 30%);
+$color-meter-normal-background: hsl(120, 100%, 30%);
+$color-meter-warning-background: hsl(43, 100%, 30%);
+$color-meter-danger-background: hsl(0, 100%, 30%);
