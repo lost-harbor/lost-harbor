@@ -9,7 +9,6 @@ env:
   PROJECT_DIR: src/LostHarbor
   PUBLISH_DIR: build
   RELEASE_DIR: build/wwwroot
-  TARGET_DIR: wwwroot
   REPOSITORY_NAME: lost-harbor/prod.lost-harbor.space
   COMMIT_MESSAGE: Publish Release ${{ github.event.release.tag_name }}
   UPLOAD_URL: ${{ github.event.release.upload_url }}
@@ -83,4 +82,3 @@ jobs:
           branch: main
           folder: ${{ env.RELEASE_DIR }}
           clean: true
-          target-folder: ${{ env.TARGET_DIR }}
