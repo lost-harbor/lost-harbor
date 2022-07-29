@@ -79,6 +79,7 @@ jobs:
           token: ${{ secrets.DEPLOY_TOKEN }}
           repository-name: ${{ env.REPOSITORY_NAME }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
-          branch: main
+          branch: build
           folder: ${{ env.RELEASE_DIR }}
           clean: true
+          tag: ${{ env.TAG_NAME }}

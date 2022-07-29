@@ -11,8 +11,7 @@ env:
   PUBLISH_DIR: build
   RELEASE_DIR: build/wwwroot
   REPOSITORY_NAME: lost-harbor/dev.lost-harbor.space
-  COMMIT_MESSAGE: Publish Release ${{ github.event.release.tag_name }}
-  UPLOAD_URL: ${{ github.event.release.upload_url }}
+  COMMIT_MESSAGE: Deploy development
 
 jobs:
   build:
@@ -48,7 +47,7 @@ jobs:
 
       - name: Create readme file
         run: |
-          printf '%s\n' '# Lost Harbor ${{ env.TAG_NAME }}' '' 'This is a deployed development build of Lost Harbor.' '' 'Source: https://github.com/lost-harbor/lost-harbor' '' 'Live Site: https://dev.lost-harbor.space' '' > ${{ env.RELEASE_DIR }}/README.md
+          printf '%s\n' '# Lost Harbor Dev' '' 'This is a deployed development build of Lost Harbor.' '' 'Source: https://github.com/lost-harbor/lost-harbor' '' 'Live Site: https://dev.lost-harbor.space' '' > ${{ env.RELEASE_DIR }}/README.md
 
       - name: Copy license file
         run: |
@@ -60,6 +59,6 @@ jobs:
           token: ${{ secrets.DEPLOY_TOKEN }}
           repository-name: ${{ env.REPOSITORY_NAME }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
-          branch: main
+          branch: build
           folder: ${{ env.RELEASE_DIR }}
           clean: true
