@@ -1,0 +1,65 @@
+name: Deploy Development
+
+on:
+  push:
+    branches:
+      - development
+
+env:
+  TAG_NAME: ${{ github.event.release.tag_name }}
+  PROJECT_DIR: src/LostHarbor
+  PUBLISH_DIR: build
+  RELEASE_DIR: build/wwwroot
+  REPOSITORY_NAME: lost-harbor/dev.lost-harbor.space
+  COMMIT_MESSAGE: Deploy development
+
+jobs:
+  build:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: development
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          ref: development
+
+      - name: Setup .NET 6
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Install dependencies
+        run: dotnet restore ${{ env.PROJECT_DIR }}
+
+      - name: Make destination directory for compiled CSS
+        run: mkdir -vp src/LostHarbor/wwwroot/css
+
+      - name: Transpile SCSS files
+        uses: gha-utilities/sass-build@v0.4.9
+        with:
+          source: src/LostHarbor/Styles/styles.scss
+          destination: src/LostHarbor/wwwroot/css/styles.css
+
+      - name: Publish with .NET 6
+        run: dotnet publish  ${{ env.PROJECT_DIR }} --configuration Debug --output ${{ env.PUBLISH_DIR }}
+
+      - name: Create readme file
+        run: |
+          printf '%s\n' '# Lost Harbor Dev' '' 'This is a deployed development build of Lost Harbor.' '' 'Source: https://github.com/lost-harbor/lost-harbor' '' 'Live Site: https://dev.lost-harbor.space' '' > ${{ env.RELEASE_DIR }}/README.md
+
+      - name: Copy license file
+        run: |
+          cp LICENSE.md ${{ env.RELEASE_DIR }}/LICENSE.md
+
+      - name: Deploy to Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          repository-name: ${{ env.REPOSITORY_NAME }}
+          commit-message: ${{ env.COMMIT_MESSAGE }}
+          branch: main
+          folder: ${{ env.RELEASE_DIR }}
+          clean: true
